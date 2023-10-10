@@ -109,7 +109,7 @@ model.summary()
 
 model.compile(loss='categorical_crossentropy', optimizer="adam",metrics=['accuracy'])
 
-history = model.fit(train_X,train_Y, epochs=5, batch_size=32, validation_data = (val_X, val_Y),  verbose=1) # type: ignore
+history = model.fit(train_X,train_Y, epochs=50, batch_size=32, validation_data = (val_X, val_Y),  verbose=1) # type: ignore
 
 plt.plot(history.history['accuracy'])
 plt.plot(history.history['val_accuracy'])
